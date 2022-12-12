@@ -1,13 +1,43 @@
-body {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.freepikLayout {
+  background: linear-gradient(180deg, #2d2db0 -65%, #2c8cf4 110%);
 }
+
+.front-img:hover .cr-info {
+  bottom: 20px;
+}
+
+.newarivals {
+  z-index: 11;
+  position: relative;
+  background: linear-gradient(0deg, rgba(17, 17, 17, 0.9), rgba(17, 17, 17, 0.9)), url(https://freepik.cdnpk.net/assets/964f58b6a12e1b2e627e8d505958023b.png);
+}
+
+.linear-overlay {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  top: 0;
+  background: linear-gradient(90deg, #7c32db42 0%, #10a3a829 43%, #ff004e3d 100%);
+  left: 0;
+}
+
+.comunity-bg {
+  background: linear-gradient(90deg, rgba(146, 205, 250, 0.4) 0%, rgba(199, 235, 255, 0.4) 100%);
+}
+
+/* --colorStart: #10a3a8;
+--colorSecond: #7c32db;
+--colorThird: #ff004e; */

@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Calendar from "./components/Calendar";
+import Comunity from "./components/Comunity";
+import Creator from "./components/Creator";
+import Features from "./components/Features";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Trending from "./components/Trending";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+     <>
+      <Header/>
+      <Trending/>
+      <Creator/>
+      <Features/>
+      <Calendar/>
+      <Comunity/>
+      <Footer/>
+     </>
   );
 }
 
